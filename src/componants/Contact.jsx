@@ -8,7 +8,6 @@ const Contact = () => {
   const dataFn = async () => {
     try {
       const { data } = await axios.get("data.json");
-      setBakery(data.bakery);
     } catch (error) {
       console.error("Error fetching bakery data:", error);
     }
